@@ -249,7 +249,7 @@ class CardGame
     @players.each do |player|
       icon = player.bot? ? "🤖" : "👤"
       books_icon = "📚" * player.score
-      puts "   #{icon} #{player.name}: #{player.hand_size} cards, #{player.score} books #{books_icon}, #{player.display_hand}"
+      puts "   #{icon} #{player.name}: #{player.hand_size} cards, #{player.score} books #{books_icon}"
     end
     puts "🎴 Cards left in deck: #{@deck.size}"
     puts ""
